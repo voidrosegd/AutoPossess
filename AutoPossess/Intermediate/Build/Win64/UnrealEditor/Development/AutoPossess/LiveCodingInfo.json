@@ -1,0 +1,10 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.AutoPossess.cpp.obj": [
+			"AutoPossess.cpp.obj",
+			"AutoPossessCommands.cpp.obj",
+			"AutoPossessStyle.cpp.obj"
+		]
+	}
+}
