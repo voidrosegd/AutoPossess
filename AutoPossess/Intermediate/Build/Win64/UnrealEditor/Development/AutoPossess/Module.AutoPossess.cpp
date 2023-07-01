@@ -2,3 +2,4 @@
 #include "F:/Unreal Projects/WR_Prototype_UE5/Plugins/AutoPossess/Source/AutoPossess/Private/AutoPossess.cpp"
 #include "F:/Unreal Projects/WR_Prototype_UE5/Plugins/AutoPossess/Source/AutoPossess/Private/AutoPossessCommands.cpp"
 #include "F:/Unreal Projects/WR_Prototype_UE5/Plugins/AutoPossess/Source/AutoPossess/Private/AutoPossessStyle.cpp"
+#include "F:/Unreal Projects/WR_Prototype_UE5/Plugins/AutoPossess/Source/AutoPossess/Private/CustomLogCategory.cpp"

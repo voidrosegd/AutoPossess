@@ -34,7 +34,6 @@ FName FAutoPossessStyle::GetStyleSetName()
 	return StyleSetName;
 }
 
-
 const FVector2D Icon16x16(16.0f, 16.0f);
 const FVector2D Icon20x20(20.0f, 20.0f);
 
@@ -42,8 +41,17 @@ TSharedRef< FSlateStyleSet > FAutoPossessStyle::Create()
 {
 	TSharedRef< FSlateStyleSet > Style = MakeShareable(new FSlateStyleSet("AutoPossessStyle"));
 	Style->SetContentRoot(IPluginManager::Get().FindPlugin("AutoPossess")->GetBaseDir() / TEXT("Resources"));
+	Style->Set("AutoPossess.PluginAction", new IMAGE_BRUSH(TEXT("cat1"), Icon16x16));
 
-	Style->Set("AutoPossess.PluginAction", new IMAGE_BRUSH_SVG(TEXT("PlaceholderButtonIcon"), Icon20x20));
+		/*FButtonStyle FlatButton = FButtonStyle()
+		.SetNormal(IMAGE_BRUSH(TEXT("cat1"), Icon16x16))
+		.SetHovered(IMAGE_BRUSH(TEXT("cat2"), Icon16x16))
+		.SetPressed(IMAGE_BRUSH(TEXT("cat1"), Icon16x16, FLinearColor::Red))
+		.SetNormalPadding(FMargin(1, 1, 1, 1))
+		.SetPressedPadding(FMargin(1, 1, 1, 1));*/
+
+	//Style->Set("AutoPossess.PluginAction", FButtonStyle(FlatButton));
+
 	return Style;
 }
 
