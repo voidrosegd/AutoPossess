@@ -46,28 +46,52 @@ void FAutoPossessModule::ShutdownModule()
 void FAutoPossessModule::PluginButtonClicked()
 {
 	// Put your "OnButtonClicked" stuff here
-	FText DialogText = FText::Format(
-							LOCTEXT("PluginButtonDialogText", "Add code to {0} in {1} to override this button's actions"),
-							FText::FromString(TEXT("FAutoPossessModule::PluginButtonClicked()")),
-							FText::FromString(TEXT("AutoPossess.cpp"))
-					   );
-	FMessageDialog::Open(EAppMsgType::Ok, DialogText);
-	/*
-	* По клику делаем Possess в выделеного актора(если он павн и тп)
-	* 
-	* После вселения в выделеного актера, выселяемся из всех других(хотя думаю наоборот надо)
-	*/
+	//
+	//FText DialogText = FText::Format(
+	//						LOCTEXT("PluginButtonDialogText", "Add code to {0} in {1} to override this button's actions"),
+	//						FText::FromString(TEXT("FAutoPossessModule::PluginButtonClicked()")),
+	//						FText::FromString(TEXT("AutoPossess.cpp"))
+	//				   );
+	//FMessageDialog::Open(EAppMsgType::Ok, DialogText);
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("CHTO?")));
 
-	//FLevelEditorModule& levelEditor = FModuleManager::GetModuleChecked(TEXT(“LevelEditor”));
-	//levelEditor.OnActorSelectionChanged().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnActorSelectionChanged);
-
-	// Take control of the default player
-	//AutoPossessPlayer = EAutoReceiveInput::Player0;
-
-	//TSubclassOf<AActor> ClassToFind; // Needs to be populated somehow (e.g. by exposing to blueprints as uproperty and setting it there
-	//TArray<AActor*> FoundActors;
-	//UGameplayStatics::GetAllActorsOfClass(GetWorld(), ClassToFind, FoundActors);
-
+	/*FModuleManager& moduleManager = FModuleManager::Get();
+	const FName moduleName = (FName) "LevelEditor";
+	FLevelEditorModule& levelEditor = FModuleManager::GetModuleChecked<FLevelEditorModule>(moduleName);*/
+	
+	TSubclassOf<AActor> ClassToFind;
+	TArray<AActor*> FoundActors;
+	FWorldContext* world = GEngine->GetWorldContextFromGameViewport(GEngine->GameViewport);
+	world->World()->GetActorCount();
+	
+	UGameplayStatics::GetAllActorsOfClass(world->World(), ClassToFind, FoundActors);//world->World()  u->GetWorld()
+	
+	TArray<AActor*> findActors = world->World()->GetCurrentLevel()->Actors;
+	for (int i = 0; i < findActors.Num(); i++) {
+		if (findActors[i]->IsSelectedInEditor()){
+			UE_LOG(Voorhu, Warning, TEXT("%s is selected"), *findActors[i]->GetActorLabel());
+			APawn* papa = Cast<APawn>(findActors[i]);
+			if (papa != nullptr) { 
+				papa->AutoPossessPlayer = EAutoReceiveInput::Player0; 
+				SET_WARN_COLOR(COLOR_BLACK);
+				UE_LOG(Voorhu, Warning, TEXT("Possess of %s set to Player0"), *findActors[i]->GetActorLabel());
+				CLEAR_WARN_COLOR();
+			}
+			else				
+				UE_LOG(Voorhu, Error, TEXT("%s not valid,\nCareful, all Actor's Possess is set Disable!"), *findActors[i]->GetActorLabel());
+		} else {
+			//UE_LOG(Voorhu, Warning, TEXT("%s is not selected"), *findActors[i]->GetActorLabel());
+			APawn* mama = Cast<APawn>(findActors[i]);
+			if (mama != nullptr) mama->AutoPossessPlayer = EAutoReceiveInput::Disabled;
+		}
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("length of findActors = %d"), findActors.Num()));
+	GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("length of FoundActors = %d"), FoundActors.Num()));
+	GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("worldName = %s"), *world->World()->GetDebugDisplayName()));
+	//for (AActor* act : findActors) {
+	//	UE_LOG(LogTemp, Warning, TEXT("%s"), *act->GetActorLabel());
+	//	//GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("worldName = %s"), *act->GetActorLabel()));//GetFullName
+	//}
 }
 
 void FAutoPossessModule::RegisterMenus()

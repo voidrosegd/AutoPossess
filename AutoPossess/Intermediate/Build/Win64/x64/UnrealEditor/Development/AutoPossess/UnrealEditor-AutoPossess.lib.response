@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-AutoPossess.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Ortuz\Documents\Unreal Projects\testo\Intermediate\Build\Win64\x64\testoEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\Users\Ortuz\Documents\Unreal Projects\testo\Plugins\AutoPossess\AutoPossess\Intermediate\Build\Win64\x64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.obj"
+"C:\Users\Ortuz\Documents\Unreal Projects\testo\Plugins\AutoPossess\AutoPossess\Intermediate\Build\Win64\x64\UnrealEditor\Development\AutoPossess\Default.rc2.res"
+/OUT:"C:\Users\Ortuz\Documents\Unreal Projects\testo\Plugins\AutoPossess\AutoPossess\Intermediate\Build\Win64\x64\UnrealEditor\Development\AutoPossess\UnrealEditor-AutoPossess.lib"

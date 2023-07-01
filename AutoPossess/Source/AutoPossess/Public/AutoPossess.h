@@ -4,6 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
+#include "LevelEditor.h"
+#include "Kismet/GameplayStatics.h"
+#include "GameFramework/Actor.h"
+#include "Engine/World.h"
+
+#include "CustomLogCategory.h"
+
+
 
 class FToolBarBuilder;
 class FMenuBuilder;

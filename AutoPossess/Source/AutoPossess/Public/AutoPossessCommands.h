@@ -10,9 +10,9 @@ class FAutoPossessCommands : public TCommands<FAutoPossessCommands>
 {
 public:
 
-	FAutoPossessCommands()
-		: TCommands<FAutoPossessCommands>(TEXT("AutoPossess"), NSLOCTEXT("Contexts", "AutoPossess", "AutoPossess Plugin"), NAME_None, FAutoPossessStyle::GetStyleSetName())
+	FAutoPossessCommands():TCommands<FAutoPossessCommands>(TEXT("AutoPossess"), NSLOCTEXT("Contexts", "AutoPossess", "AutoPossess Plugin"), NAME_None, FAutoPossessStyle::GetStyleSetName())
 	{
+
 	}
 
 	// TCommands<> interface
