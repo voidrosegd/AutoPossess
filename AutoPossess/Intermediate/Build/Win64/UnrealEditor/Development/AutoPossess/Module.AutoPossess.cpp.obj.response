@@ -1,6 +1,6 @@
-"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp"
+"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp"
 /I .
-/I "F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Source\AutoPossess\Private"
+/I "F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Source\AutoPossess\Private"
 /I Runtime
 /I Runtime\Projects\Public
 /I Runtime\TraceLog\Public
@@ -270,8 +270,8 @@
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\UHT
 /I Runtime\AIModule\Public
 /I Runtime\AIModule\Classes
-/I "F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Source"
-/I "F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Source\AutoPossess\Public"
+/I "F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Source"
+/I "F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Source\AutoPossess\Public"
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -280,12 +280,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Intermediate\Build\Win64\LBR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h"
-/FI"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Definitions.AutoPossess.h"
-/Yu"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Intermediate\Build\Win64\LBR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h"
-/Fp"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Intermediate\Build\Win64\LBR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.pch"
-/Fo"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.obj"
-/sourceDependencies "F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.dep.json"
+/FI"F:\Unreal Projects\WR_Prototype_UE5\Intermediate\Build\Win64\WR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h"
+/FI"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Definitions.AutoPossess.h"
+/Yu"F:\Unreal Projects\WR_Prototype_UE5\Intermediate\Build\Win64\WR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h"
+/Fp"F:\Unreal Projects\WR_Prototype_UE5\Intermediate\Build\Win64\WR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.pch"
+/Fo"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.obj"
+/sourceDependencies "F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.dep.json"
 /Zc:inline
 /nologo
 /Oi

@@ -68,6 +68,6 @@
 /DBUILD_VERSION=++UE5+Release-5.1-CL-23901901
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
-/DPROJECT_PRODUCT_IDENTIFIER=LBR_Prototype_UE5
-/fo "F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Default.rc2.res"
+/DPROJECT_PRODUCT_IDENTIFIER=WR_Prototype_UE5
+/fo "F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

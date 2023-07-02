@@ -1,4 +1,8 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+/*
+* AutoPossess - Unreal Engine 5 Advertise Plugin for Yandex
+*
+* Copyright (C) 2023 VOORHU <voorhu@gmail.com> All Rights Reserved.
+*/
 
 #include "AutoPossess.h"
 #include "AutoPossessStyle.h"
@@ -45,7 +49,21 @@ void FAutoPossessModule::ShutdownModule()
 }
 
 void FAutoPossessModule::PluginButtonClicked()
-{	
+{
+	// Put your "OnButtonClicked" stuff here
+	//
+	//FText DialogText = FText::Format(
+	//						LOCTEXT("PluginButtonDialogText", "Add code to {0} in {1} to override this button's actions"),
+	//						FText::FromString(TEXT("FAutoPossessModule::PluginButtonClicked()")),
+	//						FText::FromString(TEXT("AutoPossess.cpp"))
+	//				   );
+	//FMessageDialog::Open(EAppMsgType::Ok, DialogText);
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("CHTO?")));
+
+	/*FModuleManager& moduleManager = FModuleManager::Get();
+	const FName moduleName = (FName) "LevelEditor";
+	FLevelEditorModule& levelEditor = FModuleManager::GetModuleChecked<FLevelEditorModule>(moduleName);*/
+	
 	TSubclassOf<AActor> ClassToFind;
 	TArray<AActor*> FoundActors;
 	FWorldContext* world = GEngine->GetWorldContextFromGameViewport(GEngine->GameViewport);
@@ -55,33 +73,30 @@ void FAutoPossessModule::PluginButtonClicked()
 	
 	TArray<AActor*> findActors = world->World()->GetCurrentLevel()->Actors;
 	for (int i = 0; i < findActors.Num(); i++) {
-		if (world->World()->ContainsActor(findActors[i])) {
-			if (findActors[i]->IsSelectedInEditor()) {
-				APawn* papa = Cast<APawn>(findActors[i]);
-				if (papa != nullptr) {
-					papa->AutoPossessPlayer = EAutoReceiveInput::Player0;
-					SET_WARN_COLOR(COLOR_BLACK);
-					UE_LOG(Voorhu, Warning, TEXT("Possess of %s set to Player0"), *findActors[i]->GetActorLabel());
-					CLEAR_WARN_COLOR();
-				}
-				else
-					UE_LOG(Voorhu, Error, TEXT("%s not valid,\nCareful, all Actor's Possess is set Disable!"), *findActors[i]->GetActorLabel());
+		if (findActors[i]->IsSelectedInEditor()){
+			UE_LOG(Voorhu, Warning, TEXT("%s is selected"), *findActors[i]->GetActorLabel());
+			APawn* papa = Cast<APawn>(findActors[i]);
+			if (papa != nullptr) { 
+				papa->AutoPossessPlayer = EAutoReceiveInput::Player0; 
+				SET_WARN_COLOR(COLOR_BLACK);
+				UE_LOG(Voorhu, Warning, TEXT("Possess of %s set to Player0"), *findActors[i]->GetActorLabel());
+				CLEAR_WARN_COLOR();
 			}
-			else {
-				//UE_LOG(Voorhu, Warning, TEXT("%s is not selected"), *findActors[i]->GetActorLabel());
-				APawn* mama = Cast<APawn>(findActors[i]);
-				if (mama != nullptr) mama->AutoPossessPlayer = EAutoReceiveInput::Disabled;
-				//UE_LOG(Voorhu, Warning, TEXT("%s is selected"), *findActors[i]->GetActorLabel());
-			}
+			else				
+				UE_LOG(Voorhu, Error, TEXT("%s not valid,\nCareful, all Actor's Possess is set Disable!"), *findActors[i]->GetActorLabel());
+		} else {
+			//UE_LOG(Voorhu, Warning, TEXT("%s is not selected"), *findActors[i]->GetActorLabel());
+			APawn* mama = Cast<APawn>(findActors[i]);
+			if (mama != nullptr) mama->AutoPossessPlayer = EAutoReceiveInput::Disabled;
 		}
-		else {
-			//UE_LOG(Voorhu, Error, TEXT("not find"));
-		}
-			
 	}
 	GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("length of findActors = %d"), findActors.Num()));
 	GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("length of FoundActors = %d"), FoundActors.Num()));
 	GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("worldName = %s"), *world->World()->GetDebugDisplayName()));
+	//for (AActor* act : findActors) {
+	//	UE_LOG(LogTemp, Warning, TEXT("%s"), *act->GetActorLabel());
+	//	//GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Blue, FString::Printf(TEXT("worldName = %s"), *act->GetActorLabel()));//GetFullName
+	//}
 }
 
 void FAutoPossessModule::RegisterMenus()
