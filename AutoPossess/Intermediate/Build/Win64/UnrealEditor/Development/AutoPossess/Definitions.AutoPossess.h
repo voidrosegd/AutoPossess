@@ -65,8 +65,8 @@
 #define UE_IS_ENGINE_MODULE 0
 #define UE_DISABLE_INLINE_GEN_CPP 0
 #define UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_1 1
-#define UE_PROJECT_NAME WR_Prototype_UE5
-#define UE_TARGET_NAME WR_Prototype_UE5Editor
+#define UE_PROJECT_NAME LBR_Prototype_UE5
+#define UE_TARGET_NAME LBR_Prototype_UE5Editor
 #define UE_MODULE_NAME "AutoPossess"
 #define UE_PLUGIN_NAME "AutoPossess"
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 

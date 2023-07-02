@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-AutoPossess.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"F:\Unreal Projects\WR_Prototype_UE5\Intermediate\Build\Win64\WR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.obj"
-"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.obj"
-"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Default.rc2.res"
-/OUT:"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\UnrealEditor-AutoPossess.lib"
+"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Intermediate\Build\Win64\LBR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.obj"
+"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Default.rc2.res"
+/OUT:"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\UnrealEditor-AutoPossess.lib"

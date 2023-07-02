@@ -1,4 +1,11 @@
+/*
+* ADSCore Lite - Unreal Engine 5 Advertise Plugin for Yandex
+*
+* Copyright (C) 2023 VOORHU <voorhu@gmail.com> All Rights Reserved.
+*/
+
 #pragma once
+
 #include "Logging/LogMacros.h"
 //DECLARE_LOG_CATEGORY_EXTERN(Voorhu, Log, VeryVerbose);
 DECLARE_LOG_CATEGORY_EXTERN(Voorhu, Log, All);

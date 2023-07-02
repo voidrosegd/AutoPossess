@@ -33,9 +33,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"F:\Unreal Projects\WR_Prototype_UE5\Intermediate\Build\Win64\WR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.obj"
-"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.obj"
-"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Default.rc2.res"
+"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Intermediate\Build\Win64\LBR_Prototype_UE5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Module.AutoPossess.cpp.obj"
+"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\Default.rc2.res"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Projects\UnrealEditor-Projects.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\EditorFramework\UnrealEditor-EditorFramework.lib"
@@ -70,7 +70,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Binaries\Win64\UnrealEditor-AutoPossess.dll"
-/IMPLIB:"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\UnrealEditor-AutoPossess.suppressed.lib"
-/PDB:"F:\Unreal Projects\WR_Prototype_UE5\Plugins\AutoPossess\Binaries\Win64\UnrealEditor-AutoPossess.pdb"
+/OUT:"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Binaries\Win64\UnrealEditor-AutoPossess.dll"
+/IMPLIB:"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Intermediate\Build\Win64\UnrealEditor\Development\AutoPossess\UnrealEditor-AutoPossess.suppressed.lib"
+/PDB:"F:\Unreal Projects\LBR_Prototype_UE5_CPP\Plugins\AutoPossess\Binaries\Win64\UnrealEditor-AutoPossess.pdb"
 /ignore:4078

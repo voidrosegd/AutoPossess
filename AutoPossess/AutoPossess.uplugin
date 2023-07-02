@@ -1,24 +1,27 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
+	"VersionName": "1.0.0",
 	"FriendlyName": "AutoPossess",
-	"Description": "",
+	"Description": "Button to switch Player Possess",
 	"Category": "Other",
-	"CreatedBy": "VoidRose",
-	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"SupportURL": "",
+	"CreatedBy": "VOORHU",
+	"CreatedByURL": "https://boosty.to/adscore",
+	"DocsURL": "https://github.com/voidrosegd/AutoPossess/blob/main/README.md",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/681ed77f5bfd4b3db7c20f2a954e1252",
+	"SupportURL": "voorhu@gmail.com",
 	"CanContainContent": false,
-	"IsBetaVersion": false,
+	"IsBetaVersion": true,
 	"IsExperimentalVersion": false,
 	"Installed": false,
 	"Modules": [
 		{
 			"Name": "AutoPossess",
 			"Type": "Editor",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
 		}
 	]
 }
