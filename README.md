@@ -15,7 +15,7 @@
 
 # Documentation
 
-### Select the desired pawn or character and press the button.
+### Select the desired pawn or character and press the button with kitty.
 
 ![ScreenShot](Images/button.png)
 
